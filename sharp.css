@@ -1,0 +1,10 @@
+/* Resolution-safe layout overrides: keep 240x300 product sprite close to native display size */
+@media (min-width:1200px){
+  .product-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:32px 12px}
+  .shop-layout{grid-template-columns:210px minmax(0,1fr)}
+  .product-modal{width:min(820px,92vw)}
+  .product-detail{grid-template-columns:340px 1fr}
+  .detail-media{min-height:425px}
+  .detail-copy{padding:42px 34px}
+}
+.product-shot,.detail-shot,.bag-thumb{image-rendering:auto;backface-visibility:hidden;transform:translateZ(0)}
