@@ -1,18 +1,169 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NHÀN — Linen for Everyday Ease</title><link rel="stylesheet" href="styles.css"></head><body>
-<div class="announcement">COMPLIMENTARY SHIPPING IN VIETNAM ON ORDERS OVER 2.000.000₫</div>
-<header><a class="logo" href="#home">Nhàn</a><nav><a href="#new">New In</a><a href="#women">Women</a><a href="#men">Men</a><a href="#unisex">Unisex</a><a href="#craft">The Craft</a><a href="#story">Our Story</a></nav><div class="actions"><button id="searchBtn">Search</button><button id="cartBtn">Bag <span id="cartCount">0</span></button></div></header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NHÀN — Linen Collection</title>
+<meta name="description" content="NHÀN — contemporary linen clothing for women, men and unisex wardrobes.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="promo">FREE SHIPPING FOR ORDERS FROM 1.500.000₫</div>
+
+<header class="site-header">
+  <div class="top-nav">
+    <a class="logo" href="#home">NHÀN<span>LINEN COLLECTION</span></a>
+    <nav>
+      <a href="#shop" data-nav-filter="women">WOMEN</a>
+      <a href="#shop" data-nav-filter="men">MEN</a>
+      <a href="#shop" data-nav-filter="unisex">UNISEX</a>
+      <a href="#story">OUR STORY</a>
+      <a href="#lookbook">LOOKBOOK</a>
+    </nav>
+    <div class="tools">
+      <button id="searchBtn">SEARCH</button>
+      <button id="accountBtn">ACCOUNT</button>
+      <button id="bagBtn">BAG (<span id="bagCount">0</span>)</button>
+      <button id="menuBtn" class="menu-btn">MENU</button>
+    </div>
+  </div>
+</header>
+
 <main id="home">
-<section class="hero"><div class="hero-scene"><div class="arch"></div><div class="model model-w"><span></span></div><div class="model model-m"><span></span></div><div class="leaf l1"></div><div class="leaf l2"></div></div><div class="hero-copy"><small>NHÀN / 2026</small><h1>Quietly<br>well made.</h1><p>Linen clothing for women, men<br>and everyone in between.</p><a href="#new">Discover the collection</a></div></section>
-<section class="intro"><small>THE QUIET COLLECTION</small><h2>Designed to feel like<br>you have nowhere to rush.</h2><p>Natural linen. Soft structure. A considered wardrobe in colours borrowed from sun, stone and earth.</p></section>
-<section class="collection-duo"><a href="#women" class="collection women"><div class="person-art woman-art"></div><div><small>01 / WOMEN</small><h3>Soft form.</h3><p>Fluid silhouettes and softened tailoring.</p></div></a><a href="#men" class="collection men"><div class="person-art man-art"></div><div><small>02 / MEN</small><h3>Built light.</h3><p>Relaxed shirting and easy trousers.</p></div></a></section>
-<section id="new" class="shop"><div class="shop-head"><div><small>JUST ARRIVED</small><h2>New in</h2></div><div class="filters"><button class="active" data-filter="all">All</button><button data-filter="women">Women</button><button data-filter="men">Men</button><button data-filter="unisex">Unisex</button></div></div><div id="productGrid" class="grid"></div></section>
-<section id="women" class="feature cream"><div class="feature-art fa-w"></div><div class="feature-copy"><small>WOMEN / 2026</small><h2>Ease in<br>motion.</h2><p>Breathable dresses, shirts and separates shaped for warm days.</p><button onclick="filterTo('women')">Shop women</button></div></section>
-<section id="men" class="feature stone"><div class="feature-art fa-m"></div><div class="feature-copy"><small>MEN / 2026</small><h2>Relaxed<br>precision.</h2><p>Natural linen shirting and trousers with a clean, considered fit.</p><button onclick="filterTo('men')">Shop men</button></div></section>
-<section id="unisex" class="feature tobacco"><div class="feature-art fa-u"></div><div class="feature-copy"><small>UNISEX / SHARED WARDROBE</small><h2>Made to be<br>passed around.</h2><p>Signature pieces designed without a fixed side of the wardrobe.</p><button onclick="filterTo('unisex')">Shop unisex</button></div></section>
-<section id="craft" class="craft"><div><small>THE CRAFT</small><h2>Why linen?</h2><p>Because it breathes, softens, wrinkles honestly and ages beautifully. NHÀN celebrates linen as it is — tactile, imperfect and alive.</p></div><div class="weave"></div></section>
-<section id="story" class="story"><small>OUR STORY</small><h2>NHÀN means ease.</h2><p>Not doing nothing — but doing things with enough space to notice them. Fewer, better clothes. Natural fibres. Calm colours. Silhouettes that let the body move.</p></section>
+<section class="hero">
+  <div class="hero-photo" role="img" aria-label="NHÀN linen collection for women and men"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-overlay">
+    <p>NHÀN / 2026</p>
+    <h1>THE QUIET<br>COLLECTION</h1>
+    <div class="hero-links"><span>WOMEN</span><i>·</i><span>MEN</span><i>·</i><span>UNISEX</span></div>
+    <a href="#shop">SHOP NOW</a>
+  </div>
+</section>
+
+<section class="benefits">
+  <div><b>01</b><span><strong>NATURAL FABRICS</strong>Linen-led, breathable materials</span></div>
+  <div><b>02</b><span><strong>MINDFUL DESIGN</strong>Simple pieces made to repeat</span></div>
+  <div><b>03</b><span><strong>FREE SHIPPING</strong>Orders from 1.500.000₫</span></div>
+  <div><b>04</b><span><strong>EASY RETURNS</strong>Within 14 days</span></div>
+</section>
+
+<div id="new" class="anchor-offset"></div>
+<section id="shop" class="shop">
+  <div class="shop-title-row">
+    <div><p>NHÀN / SHOP</p><h2>New Arrivals</h2><span id="resultCount">18 products</span></div>
+    <div class="sort-wrap">
+      <label for="sortSelect">SORT BY:</label>
+      <select id="sortSelect">
+        <option value="featured">Featured</option>
+        <option value="price-low">Price: low to high</option>
+        <option value="price-high">Price: high to low</option>
+        <option value="name">Name</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="shop-layout">
+    <aside class="filters">
+      <div class="filter-block">
+        <h3>COLLECTION</h3>
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="women">Women</button>
+        <button class="filter" data-filter="men">Men</button>
+        <button class="filter" data-filter="unisex">Unisex</button>
+      </div>
+      <div class="filter-block">
+        <h3>CATEGORY</h3>
+        <button class="type-filter active" data-type="all">All pieces</button>
+        <button class="type-filter" data-type="Shirts">Shirts</button>
+        <button class="type-filter" data-type="Tops">Tops</button>
+        <button class="type-filter" data-type="Bottoms">Bottoms</button>
+        <button class="type-filter" data-type="Dresses">Dresses</button>
+      </div>
+      <div class="filter-block color-note">
+        <h3>PALETTE</h3>
+        <div><i style="--c:#e8e0d1"></i><i style="--c:#c5ae8a"></i><i style="--c:#7a7a62"></i><i style="--c:#596773"></i><i style="--c:#333"></i></div>
+        <p>Each piece is available in 3 considered colours.</p>
+      </div>
+      <button id="resetFilters" class="reset">RESET FILTERS</button>
+    </aside>
+
+    <div id="productGrid" class="product-grid"></div>
+  </div>
+</section>
+
+<section id="lookbook" class="editorial">
+  <div class="editorial-image"><div class="editorial-shot" role="img" aria-label="NHÀN linen overshirt" style="background-position:50% 11.76471%"></div></div>
+  <div class="editorial-copy">
+    <p>THE LINEN EDIT / 2026</p>
+    <h2>Made for days<br>with less rush.</h2>
+    <span>Natural texture, softened tailoring and colours borrowed from stone, earth and sky.</span>
+    <a href="#shop">DISCOVER THE COLLECTION →</a>
+  </div>
+</section>
+
+<section class="category-strip">
+  <article><div class="cat-shot" role="img" aria-label="NHÀN women's linen wrap dress" style="background-position:0% 47.05882%"></div><p>01</p><h3>Women</h3><button data-category-go="women">Shop women →</button></article>
+  <article><div class="cat-shot" role="img" aria-label="NHÀN men camp collar shirt" style="background-position:0% 0%"></div><p>02</p><h3>Men</h3><button data-category-go="men">Shop men →</button></article>
+  <article><div class="cat-shot" role="img" aria-label="NHÀN unisex signature linen shirt" style="background-position:0% 70.58824%"></div><p>03</p><h3>Unisex</h3><button data-category-go="unisex">Shop unisex →</button></article>
+</section>
+
+<section id="story" class="story">
+  <p>OUR STORY</p>
+  <h2>NHÀN means ease.</h2>
+  <span>Not doing nothing — but moving with enough space to notice the day. We make linen pieces that are simple without being plain, soft without losing form, and useful enough to return to again and again.</span>
+</section>
+
+<section class="newsletter">
+  <div><p>JOIN NHÀN</p><h2>10% off your first order</h2></div>
+  <form id="newsletterForm"><input type="email" placeholder="Enter your email" required><button>SUBSCRIBE</button></form>
+</section>
 </main>
-<footer><div><b class="logo">Nhàn</b><p>Linen for everyday ease.</p></div><div><b>SHOP</b><a href="#women">Women</a><a href="#men">Men</a><a href="#unisex">Unisex</a></div><div><b>CONTACT</b><span>hello@nhan-studio.com</span><span>Ho Chi Minh City, Vietnam</span></div></footer>
-<div id="overlay" class="overlay"></div><aside id="cart" class="cart"><div class="cart-head"><h3>Your bag</h3><button onclick="closeCart()">×</button></div><div id="cartItems"></div><div class="cart-foot"><span>Subtotal</span><b id="cartTotal">0₫</b><button>Checkout</button><small>Concept storefront — payment not connected.</small></div></aside>
-<div id="modal" class="modal"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div>
-<script src="products.js"></script><script src="app.js"></script></body></html>
+
+<footer>
+  <div class="foot-brand"><div class="logo">NHÀN<span>LINEN COLLECTION</span></div><p>Timeless pieces, naturally made.</p></div>
+  <div><b>SHOP</b><a href="#shop">Women</a><a href="#shop">Men</a><a href="#shop">Unisex</a><a href="#shop">All Products</a></div>
+  <div><b>SUPPORT</b><span>Shipping & Delivery</span><span>Returns & Exchanges</span><span>FAQ</span><span>Size Guide</span></div>
+  <div><b>ABOUT</b><a href="#story">Our Story</a><span>Sustainability</span><span>Careers</span><span>Contact</span></div>
+  <div><b>FOLLOW US</b><span>Instagram</span><span>TikTok</span><span>Pinterest</span></div>
+</footer>
+
+<div id="pageOverlay" class="page-overlay"></div>
+
+<aside id="bagDrawer" class="drawer">
+  <div class="drawer-top"><h2>Your bag</h2><button id="closeBag">×</button></div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="drawer-foot">
+    <div><span>Subtotal</span><b id="bagTotal">0₫</b></div>
+    <button class="checkout">CHECKOUT</button>
+    <small>Demo storefront — no payment is processed.</small>
+  </div>
+</aside>
+
+<section id="productModal" class="product-modal" aria-hidden="true">
+  <button id="closeProduct" class="close-product">×</button>
+  <div id="productModalContent"></div>
+</section>
+
+<div id="mobileMenu" class="mobile-menu">
+  <button id="closeMenu">×</button>
+  <a href="#shop" data-mobile-filter="women">WOMEN</a>
+  <a href="#shop" data-mobile-filter="men">MEN</a>
+  <a href="#shop" data-mobile-filter="unisex">UNISEX</a>
+  <a href="#story">OUR STORY</a>
+  <a href="#lookbook">LOOKBOOK</a>
+</div>
+
+<script src="imgchunk_sprite_0.js"></script>
+<script src="imgchunk_sprite_1.js"></script>
+<script src="imgchunk_sprite_2.js"></script>
+<script src="imgchunk_sprite_3.js"></script>
+<script src="imgchunk_sprite_4.js"></script>
+<script src="imgchunk_sprite_5.js"></script>
+<script src="imgchunk_campaign_0.js"></script>
+<script src="imgchunk_campaign_1.js"></script>
+<script src="imgchunk_campaign_2.js"></script>
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
